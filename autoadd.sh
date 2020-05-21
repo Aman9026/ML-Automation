@@ -18,11 +18,9 @@ done
 
 #Alternates
 #a=$(grep -n -e "model.compile(optimizer='adam'" test |  cut -d ":" -f1)
-#let a++
 #echo $a
 #sed -i "${a}s/.*/model.compile(optimizer='adamax'/" test
 
 #a=$(grep -n -e "model.compile(optimizer='adam'" test |  cut -d ":" -f1)
-#let a++
 #echo $a
 #sed -i "${a}s/.*/model.compile(optimizer='nadam'/" test
