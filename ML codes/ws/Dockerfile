@@ -14,5 +14,6 @@ RUN pip install h5py
 RUN pip install keras
 RUN pip install numpy
 COPY /mlwork/ /home/
-ENTRYPOINT [ "python3" ]
-CMD ["/home/hello2.py"]
+RUN chmod +x /home/autoadd.sh
+ENTRYPOINT [ "python3", "/home/autoadd.sh"]
+
